@@ -4,6 +4,7 @@
   "author": "Patrick Stapfer <ryyppy@users.noreply.github.com>",
   "license": "Apache License 2.0",
   "dependencies": {
+    "bs-css-emotion": "^2.3.0",
     "gentype": "^3.41.0",
     "next": "^10.0.4",
     "next-transpile-modules": "^4.1.0",
@@ -24,11 +25,6 @@
     "res:start": "bsb -make-world -w"
   },
   "devDependencies": {
-    "autoprefixer": "^10.1.0",
-    "bs-platform": "8.4.2",
-    "cssnano": "^4.1.10",
-    "postcss": "^8.2.1",
-    "postcss-cli": "^8.3.1",
-    "tailwindcss": "^2.0.2"
+    "bs-platform": "8.4.2"
   }
 }

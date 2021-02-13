@@ -3,16 +3,14 @@
   "namespace": false,
   "reason": { "react-jsx": 3 },
   "refmt": 3,
-  "bs-dependencies": ["reason-react"],
+  "bs-dependencies": ["reason-react", "bs-css", "bs-css-emotion"],
   "ppx-flags": [],
-  "sources": [
-    { "dir": "src", "subdirs": true }
-  ],
+  "sources": [{ "dir": "src", "subdirs": true }],
   "package-specs": {
     "module": "es6",
     "in-source": true
   },
-  "suffix": ".js",
+  "suffix": ".bs.js",
   "warnings": {
     "error": "+101+8"
   },
