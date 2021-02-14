@@ -5,9 +5,10 @@ module Colors = {
 }
 
 module Spacing = {
-  let xsmall = #rem(0.625)
-  let small = #rem(0.75)
-  let medium = #rem(1.0)
-  let large = #rem(1.125)
-  let xlarge = #rem(1.25)
+  let xxsmall = #rem(0.5)
+  let xsmall = #rem(1.0)
+  let small = #rem(1.5)
+  let medium = #rem(2.0)
+  let large = #rem(2.5)
+  let xlarge = #rem(3.0)
 }
