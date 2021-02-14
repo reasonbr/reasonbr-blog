@@ -1,8 +1,7 @@
 {
-  "name": "rescript-nextjs-template",
+  "name": "reasonbr-blog",
   "version": "1.0.0",
-  "author": "Patrick Stapfer <ryyppy@users.noreply.github.com>",
-  "license": "Apache License 2.0",
+  "license": "MIT",
   "dependencies": {
     "bs-css-emotion": "^2.3.0",
     "gentype": "^3.41.0",
@@ -10,8 +9,7 @@
     "next-transpile-modules": "^4.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "reason-react": "^0.9.1",
-    "request": "^2.88.0"
+    "reason-react": "^0.9.1"
   },
   "scripts": {
     "dev": "next",
