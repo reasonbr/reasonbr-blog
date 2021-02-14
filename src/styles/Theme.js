@@ -61,9 +61,56 @@ var Spacing = {
   xlarge: Spacing_xlarge
 };
 
+var Sizes_xsmall = {
+  NAME: "rem",
+  VAL: 0.625
+};
+
+var Sizes_small = {
+  NAME: "rem",
+  VAL: 0.75
+};
+
+var Sizes_medium = {
+  NAME: "rem",
+  VAL: 1.0
+};
+
+var Sizes_large = {
+  NAME: "rem",
+  VAL: 1.125
+};
+
+var Sizes_xlarge = {
+  NAME: "rem",
+  VAL: 1.25
+};
+
+var Sizes_xxlarge = {
+  NAME: "rem",
+  VAL: 1.5
+};
+
+var Sizes = {
+  xsmall: Sizes_xsmall,
+  small: Sizes_small,
+  medium: Sizes_medium,
+  large: Sizes_large,
+  xlarge: Sizes_xlarge,
+  xxlarge: Sizes_xxlarge
+};
+
+var Font = {
+  light: 300,
+  normal: 400,
+  bold: 600,
+  Sizes: Sizes
+};
+
 export {
   Colors ,
   Spacing ,
+  Font ,
   
 }
 /* No side effect */

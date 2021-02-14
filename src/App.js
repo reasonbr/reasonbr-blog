@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import * as PostCard from "./components/PostCard/PostCard.js";
+import * as Separator from "./components/Separator/Separator.js";
 import * as MainLayout from "./layouts/MainLayout.js";
 import * as GlobalStyles from "./styles/GlobalStyles.js";
 
@@ -9,12 +10,14 @@ GlobalStyles.add(undefined);
 
 function $$default(param) {
   return React.createElement(MainLayout.make, {
-              children: React.createElement(PostCard.make, {
-                    title: "Introdução ao Rescript e React",
-                    description: "Primeira parte do artigo sobre Rescript e React",
-                    img: "/static/post-placeholder.png"
-                  })
-            });
+              children: null
+            }, React.createElement(PostCard.make, {
+                  title: "Introdução ao Rescript e React",
+                  description: "Primeira parte do artigo sobre Rescript e React",
+                  img: "/static/post-placeholder.png"
+                }), React.createElement(Separator.make, {
+                  children: "New section"
+                }));
 }
 
 export {

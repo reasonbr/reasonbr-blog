@@ -8,5 +8,6 @@ let default = (): React.element => {
       title=j`Introdução ao Rescript e React`
       description=j`Primeira parte do artigo sobre Rescript e React`
     />
+    <Separator> {React.string("New section")} </Separator>
   </MainLayout>
 }
