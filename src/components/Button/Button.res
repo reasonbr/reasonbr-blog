@@ -6,7 +6,7 @@ module Styles = {
 
   let button = (~size) => {
     let buttonSize = switch size {
-    | #Small => style(.[height(#px(32))])
+    | #Small => style(.[height(#rem(2.)), width(#rem(5.))])
     | #Medium => style(.[padding2(~v=Spacing.xsmall, ~h=Spacing.medium)])
     }
     let defaultStyles = style(.[
@@ -16,13 +16,13 @@ module Styles = {
       borderRadius(#rem(3.)),
       cursor(#pointer),
       outlineStyle(#none),
+      textAlign(#center),
     ])
-
     merge(.[buttonSize, defaultStyles])
   }
 }
 
 @react.component
-let make = (~children, ~size=#Medium) => {
-  <button className={Styles.button(~size)}> children </button>
+let make = (~children, ~size=#Medium, ~className="") => {
+  <button className={Styles.button(~size) ++ " " ++ className}> children </button>
 }

@@ -5,10 +5,16 @@ import * as Theme from "../../styles/Theme.js";
 import * as React from "react";
 
 function button(size) {
-  var buttonSize = size === "Medium" ? CssJs.style([CssJs.padding2(Theme.Spacing.xsmall, Theme.Spacing.medium)]) : CssJs.style([CssJs.height({
-                NAME: "px",
-                VAL: 32
-              })]);
+  var buttonSize = size === "Medium" ? CssJs.style([CssJs.padding2(Theme.Spacing.xsmall, Theme.Spacing.medium)]) : CssJs.style([
+          CssJs.height({
+                NAME: "rem",
+                VAL: 2
+              }),
+          CssJs.width({
+                NAME: "rem",
+                VAL: 5
+              })
+        ]);
   var defaultStyles = CssJs.style([
         CssJs.backgroundColor(Theme.Colors.primary),
         CssJs.borderStyle("none"),
@@ -18,7 +24,8 @@ function button(size) {
               VAL: 3
             }),
         CssJs.cursor("pointer"),
-        CssJs.outlineStyle("none")
+        CssJs.outlineStyle("none"),
+        CssJs.textAlign("center")
       ]);
   return CssJs.merge([
               buttonSize,
@@ -33,9 +40,11 @@ var Styles = {
 function Button(Props) {
   var children = Props.children;
   var sizeOpt = Props.size;
+  var classNameOpt = Props.className;
   var size = sizeOpt !== undefined ? sizeOpt : "Medium";
+  var className = classNameOpt !== undefined ? classNameOpt : "";
   return React.createElement("button", {
-              className: button(size)
+              className: button(size) + " " + className
             }, children);
 }
 

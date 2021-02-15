@@ -8,16 +8,20 @@ function add(param) {
         CssJs.padding("zero"),
         CssJs.margin("zero")
       ]);
-  return CssJs.$$global("html,body", [
-              CssJs.height({
-                    NAME: "percent",
-                    VAL: 100.0
-                  }),
-              CssJs.width({
-                    NAME: "percent",
-                    VAL: 100.0
-                  })
-            ]);
+  CssJs.$$global("html,body", [
+        CssJs.height({
+              NAME: "percent",
+              VAL: 100.0
+            }),
+        CssJs.width({
+              NAME: "percent",
+              VAL: 100.0
+            })
+      ]);
+  return CssJs.$$global("body", [CssJs.backgroundColor({
+                    NAME: "hex",
+                    VAL: "F2F2F2"
+                  })]);
 }
 
 export {
