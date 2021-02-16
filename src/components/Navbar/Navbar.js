@@ -14,18 +14,7 @@ var wrapper = CssJs.style([
             NAME: "rem",
             VAL: 4
           }),
-      CssJs.margin2(Theme.Spacing.medium, Theme.Spacing.large)
-    ]);
-
-var leftSide = CssJs.style([
-      CssJs.width({
-            NAME: "rem",
-            VAL: 4
-          }),
-      CssJs.height({
-            NAME: "rem",
-            VAL: 4
-          })
+      CssJs.margin2(Theme.Spacing.medium, Theme.Spacing.small)
     ]);
 
 var rightSide = CssJs.style([
@@ -49,7 +38,6 @@ var navItem = CssJs.style([
 
 var Styles = {
   wrapper: wrapper,
-  leftSide: leftSide,
   rightSide: rightSide,
   navItemHover: navItemHover,
   navItem: navItem
@@ -58,9 +46,7 @@ var Styles = {
 function Navbar(Props) {
   return React.createElement("nav", {
               className: wrapper
-            }, React.createElement("div", {
-                  className: rightSide
-                }, React.createElement(Logo.make, {
+            }, React.createElement("div", undefined, React.createElement(Logo.make, {
                       color: "Black"
                     })), React.createElement("div", {
                   className: rightSide

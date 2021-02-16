@@ -7,7 +7,7 @@ module Styles = {
   let button = (~size) => {
     let buttonSize = switch size {
     | #Small => style(.[height(#rem(2.)), width(#rem(5.))])
-    | #Medium => style(.[padding2(~v=Spacing.xsmall, ~h=Spacing.medium)])
+    | #Medium => style(.[width(#rem(11.)), padding2(~v=Spacing.xsmall, ~h=Spacing.medium)])
     }
     let defaultStyles = style(.[
       backgroundColor(Colors.primary),

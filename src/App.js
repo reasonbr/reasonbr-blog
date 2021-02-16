@@ -3,12 +3,13 @@
 import * as React from "react";
 import * as MainLayout from "./layouts/MainLayout.js";
 import * as GlobalStyles from "./styles/GlobalStyles.js";
+import * as IntroSection from "./components/IntroSection/IntroSection.js";
 
 GlobalStyles.add(undefined);
 
 function $$default(param) {
   return React.createElement(MainLayout.make, {
-              children: React.createElement("div", undefined, "content")
+              children: React.createElement(IntroSection.make, {})
             });
 }
 

@@ -2,5 +2,5 @@
 // use <App/> within our Reason code. It's only used within `pages/_app.js`
 GlobalStyles.add()
 let default = (): React.element => {
-  <MainLayout> <div> {React.string("content")} </div> </MainLayout>
+  <MainLayout> <IntroSection /> </MainLayout>
 }

@@ -5,7 +5,13 @@ import * as Theme from "../../styles/Theme.js";
 import * as React from "react";
 
 function button(size) {
-  var buttonSize = size === "Medium" ? CssJs.style([CssJs.padding2(Theme.Spacing.xsmall, Theme.Spacing.medium)]) : CssJs.style([
+  var buttonSize = size === "Medium" ? CssJs.style([
+          CssJs.width({
+                NAME: "rem",
+                VAL: 11
+              }),
+          CssJs.padding2(Theme.Spacing.xsmall, Theme.Spacing.medium)
+        ]) : CssJs.style([
           CssJs.height({
                 NAME: "rem",
                 VAL: 2

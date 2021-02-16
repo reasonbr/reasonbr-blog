@@ -6,9 +6,8 @@ module Styles = {
     justifyContent(#spaceBetween),
     alignItems(#center),
     height(#rem(4.)),
-    margin2(~v=Spacing.medium, ~h=Spacing.large),
+    margin2(~v=Spacing.medium, ~h=Spacing.small),
   ])
-  let leftSide = style(.[width(#rem(4.)), height(#rem(4.))])
   let rightSide = style(.[display(#flex), alignItems(#center), marginRight(Spacing.medium)])
 
   let navItemHover = hover([textDecoration(#underline), textDecorationColor(Colors.primary)])
@@ -24,7 +23,7 @@ module Styles = {
 @react.component
 let make = () => {
   <nav className=Styles.wrapper>
-    <div className=Styles.rightSide> <Logo color=#Black /> </div>
+    <div> <Logo color=#Black /> </div>
     <div className=Styles.rightSide>
       <a className=Styles.navItem href=""> {React.string(j`Inicío`)} </a>
       <a className=Styles.navItem href=""> {React.string(j`Faça parte`)} </a>
