@@ -15,10 +15,15 @@ var wrapper = CssJs.style([
 
 var title = CssJs.style([
       CssJs.cursor("pointer"),
-      CssJs.color(Theme.Colors.primary)
+      CssJs.color(Theme.Colors.primary),
+      CssJs.fontWeight("bold"),
+      CssJs.fontSize(Theme.Font.Sizes.xlarge)
     ]);
 
-var description = CssJs.style([CssJs.marginTop(Theme.Spacing.xxsmall)]);
+var description = CssJs.style([
+      CssJs.marginTop(Theme.Spacing.xxsmall),
+      CssJs.fontSize(Theme.Font.Sizes.medium)
+    ]);
 
 var texts = CssJs.style([CssJs.marginTop(Theme.Spacing.xsmall)]);
 

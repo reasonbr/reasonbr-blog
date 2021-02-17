@@ -10,7 +10,8 @@ function button(size) {
                 NAME: "rem",
                 VAL: 11
               }),
-          CssJs.padding2(Theme.Spacing.xsmall, Theme.Spacing.medium)
+          CssJs.padding2(Theme.Spacing.xsmall, Theme.Spacing.medium),
+          CssJs.fontSize(Theme.Font.Sizes.medium)
         ]) : CssJs.style([
           CssJs.height({
                 NAME: "rem",
@@ -19,8 +20,10 @@ function button(size) {
           CssJs.width({
                 NAME: "rem",
                 VAL: 5
-              })
+              }),
+          CssJs.fontSize(Theme.Font.Sizes.small)
         ]);
+  var buttonHover = CssJs.hover([CssJs.backgroundColor(Theme.Colors.hover)]);
   var defaultStyles = CssJs.style([
         CssJs.backgroundColor(Theme.Colors.primary),
         CssJs.borderStyle("none"),
@@ -31,7 +34,8 @@ function button(size) {
             }),
         CssJs.cursor("pointer"),
         CssJs.outlineStyle("none"),
-        CssJs.textAlign("center")
+        CssJs.textAlign("center"),
+        buttonHover
       ]);
   return CssJs.merge([
               buttonSize,

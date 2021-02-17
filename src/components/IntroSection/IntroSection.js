@@ -16,11 +16,9 @@ var wrapper = CssJs.style([
     ]);
 
 var title = CssJs.style([
-      CssJs.fontSize({
-            NAME: "rem",
-            VAL: 3
-          }),
-      CssJs.marginBottom(Theme.Spacing.small)
+      CssJs.fontSize(Theme.Font.Sizes.huge),
+      CssJs.marginBottom(Theme.Spacing.small),
+      CssJs.fontWeight("bold")
     ]);
 
 var banner = CssJs.style([

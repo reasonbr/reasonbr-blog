@@ -32,7 +32,6 @@ var navItem = CssJs.style([
       CssJs.marginLeft(Theme.Spacing.xsmall),
       CssJs.color(Theme.Colors.black),
       CssJs.textDecoration("none"),
-      CssJs.fontWeight("semiBold"),
       navItemHover
     ]);
 

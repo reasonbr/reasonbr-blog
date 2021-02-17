@@ -7,7 +7,7 @@ module Styles = {
     justifyContent(#spaceBetween),
     width(#rem(64.)),
   ])
-  let title = style(.[fontSize(#rem(3.)), marginBottom(Spacing.small)])
+  let title = style(.[fontSize(Font.Sizes.huge), marginBottom(Spacing.small), fontWeight(#bold)])
   let banner = style(.[display(#flex), flexDirection(#column)])
 }
 

@@ -15,7 +15,6 @@ module Styles = {
     marginLeft(Spacing.xsmall),
     color(Colors.black),
     textDecoration(#none),
-    fontWeight(#semiBold),
     navItemHover,
   ])
 }

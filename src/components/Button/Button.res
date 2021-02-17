@@ -6,9 +6,16 @@ module Styles = {
 
   let button = (~size) => {
     let buttonSize = switch size {
-    | #Small => style(.[height(#rem(2.)), width(#rem(5.))])
-    | #Medium => style(.[width(#rem(11.)), padding2(~v=Spacing.xsmall, ~h=Spacing.medium)])
+    | #Small => style(.[height(#rem(2.)), width(#rem(5.)), fontSize(Font.Sizes.small)])
+    | #Medium =>
+      style(.[
+        width(#rem(11.)),
+        padding2(~v=Spacing.xsmall, ~h=Spacing.medium),
+        fontSize(Font.Sizes.medium),
+      ])
     }
+
+    let buttonHover = hover([backgroundColor(Colors.hover)])
     let defaultStyles = style(.[
       backgroundColor(Colors.primary),
       borderStyle(#none),
@@ -17,6 +24,7 @@ module Styles = {
       cursor(#pointer),
       outlineStyle(#none),
       textAlign(#center),
+      buttonHover,
     ])
     merge(.[buttonSize, defaultStyles])
   }

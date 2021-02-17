@@ -16,6 +16,7 @@ module Styles = {
   let wrapper = style(.[
     marginTop(Spacing.large),
     fontSize(Font.Sizes.xxlarge),
+    fontWeight(#bold),
     position(#relative),
     wrapperBefore,
   ])

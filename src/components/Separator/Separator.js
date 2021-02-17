@@ -26,6 +26,7 @@ var wrapperBefore = CssJs.after([
 var wrapper = CssJs.style([
       CssJs.marginTop(Theme.Spacing.large),
       CssJs.fontSize(Theme.Font.Sizes.xxlarge),
+      CssJs.fontWeight("bold"),
       CssJs.position("relative"),
       wrapperBefore
     ]);

@@ -4,9 +4,14 @@ module Styles = {
 
   let wrapper = style(.[display(#flex), flexDirection(#column), width(#rem(30.))])
 
-  let title = style(.[cursor(#pointer), color(Colors.primary)])
+  let title = style(.[
+    cursor(#pointer),
+    color(Colors.primary),
+    fontWeight(#bold),
+    fontSize(Font.Sizes.xlarge),
+  ])
 
-  let description = style(.[marginTop(Spacing.xxsmall)])
+  let description = style(.[marginTop(Spacing.xxsmall), fontSize(Font.Sizes.medium)])
 
   let texts = style(.[marginTop(Spacing.xsmall)])
 
