@@ -4,7 +4,7 @@
 // React component, since an alias isn't attached
 // to the original React component function name.
 import ResApp from "src/App.js";
-
+import "src/styles/fonts.css";
 // Note:
 // We need to wrap the make call with
 // a Fast-Refresh conform function name,

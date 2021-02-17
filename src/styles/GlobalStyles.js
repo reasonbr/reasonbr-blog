@@ -18,10 +18,16 @@ function add(param) {
               VAL: 100.0
             })
       ]);
-  return CssJs.$$global("body", [CssJs.backgroundColor({
+  return CssJs.$$global("body", [
+              CssJs.backgroundColor({
                     NAME: "hex",
                     VAL: "F2F2F2"
-                  })]);
+                  }),
+              CssJs.fontFamily({
+                    NAME: "custom",
+                    VAL: "Futura"
+                  })
+            ]);
 }
 
 export {

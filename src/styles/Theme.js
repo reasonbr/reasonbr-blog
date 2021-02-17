@@ -16,10 +16,16 @@ var Colors_white = {
   VAL: "FAFAFA"
 };
 
+var Colors_hover = {
+  NAME: "hex",
+  VAL: "BD1144"
+};
+
 var Colors = {
   primary: Colors_primary,
   black: Colors_black,
-  white: Colors_white
+  white: Colors_white,
+  hover: Colors_hover
 };
 
 var Spacing_xxsmall = {
@@ -63,32 +69,37 @@ var Spacing = {
 
 var Sizes_xsmall = {
   NAME: "rem",
-  VAL: 0.625
+  VAL: 0.75
 };
 
 var Sizes_small = {
   NAME: "rem",
-  VAL: 0.75
+  VAL: 1
 };
 
 var Sizes_medium = {
   NAME: "rem",
-  VAL: 1.0
+  VAL: 1.25
 };
 
 var Sizes_large = {
   NAME: "rem",
-  VAL: 1.125
+  VAL: 1.5
 };
 
 var Sizes_xlarge = {
   NAME: "rem",
-  VAL: 1.25
+  VAL: 2
 };
 
 var Sizes_xxlarge = {
   NAME: "rem",
-  VAL: 1.5
+  VAL: 2.5
+};
+
+var Sizes_huge = {
+  NAME: "rem",
+  VAL: 3.5
 };
 
 var Sizes = {
@@ -97,13 +108,11 @@ var Sizes = {
   medium: Sizes_medium,
   large: Sizes_large,
   xlarge: Sizes_xlarge,
-  xxlarge: Sizes_xxlarge
+  xxlarge: Sizes_xxlarge,
+  huge: Sizes_huge
 };
 
 var Font = {
-  light: 300,
-  normal: 400,
-  bold: 600,
   Sizes: Sizes
 };
 

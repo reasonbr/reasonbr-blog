@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Futura";
+  src: url("../../public/fonts/futura-bold-font-webfont.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("../../public/fonts/futura_bold_italic_font-webfont.woff2")
+    format("woff2");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("../../public/fonts/futura-medium-bt-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("../../public/fonts/futura_medium_italic_font-webfont.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
