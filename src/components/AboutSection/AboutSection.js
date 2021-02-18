@@ -46,9 +46,15 @@ function AboutSection(Props) {
                   children: "A Comunidade"
                 }), React.createElement("p", {
                   className: description
-                }, "ReasonBR atua como um  para duas comunidades que se separaram no ano de 2020. Por diversos fatores internos e decisões dos times, houve um rebranding e separação de ReasonML em dois projetos: ReScript e ReasonML. O objetivo de manter as duas comunidades em uma só, é para acelerar e impulsionar o crescimento de ambas linguagens no Brasil.", React.createElement("span", {
+                }, "ReasonBR atua como um ", React.createElement("span", {
                       className: highlight
-                    }, "“guarda-chuva”")), React.createElement("p", {
+                    }, "“guarda-chuva”"), " para duas comunidades que se separaram no ano de 2020. Por diversos fatores internos e decisões dos times, houve um rebranding e separação de ReasonML em dois projetos:", React.createElement("span", {
+                      className: highlight
+                    }, " Rescript "), "e", React.createElement("span", {
+                      className: highlight
+                    }, " ReasonML "), " ReScript e ReasonML. O objetivo de manter as duas comunidades em uma só, é para acelerar e impulsionar o crescimento de ambas linguagens no ", React.createElement("span", {
+                      className: highlight
+                    }, "Brasil.")), React.createElement("p", {
                   className: quote
                 }, "Você pode ler mais sobre o rebranding, separação e diferenças entre ReScript e ReasonML ", React.createElement("a", {
                       className: link
