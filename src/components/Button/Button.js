@@ -10,7 +10,10 @@ function button(size) {
                 NAME: "rem",
                 VAL: 11
               }),
-          CssJs.padding2(Theme.Spacing.xsmall, Theme.Spacing.medium),
+          CssJs.height({
+                NAME: "rem",
+                VAL: 3
+              }),
           CssJs.fontSize(Theme.Font.Sizes.medium)
         ]) : CssJs.style([
           CssJs.height({

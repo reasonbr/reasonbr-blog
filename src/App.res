@@ -18,5 +18,6 @@ let default = (): React.element => {
       }
     />
     <AboutSection />
+    <LearningSection />
   </MainLayout>
 }
