@@ -4,7 +4,7 @@ import * as CssJs from "bs-css-emotion/src/CssJs.bs.js";
 import * as Theme from "../../styles/Theme.js";
 import * as React from "react";
 
-var wrapperBefore = CssJs.after([
+var wrapperBefore = CssJs.before([
       CssJs.position("absolute"),
       CssJs.top({
             NAME: "rem",
@@ -32,7 +32,6 @@ var wrapper = CssJs.style([
     ]);
 
 var Styles = {
-  wrapperBefore: wrapperBefore,
   wrapper: wrapper
 };
 

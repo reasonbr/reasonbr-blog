@@ -38,7 +38,6 @@ var navItem = CssJs.style([
 var Styles = {
   wrapper: wrapper,
   rightSide: rightSide,
-  navItemHover: navItemHover,
   navItem: navItem
 };
 

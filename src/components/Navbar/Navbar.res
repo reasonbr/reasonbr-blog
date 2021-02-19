@@ -10,13 +10,11 @@ module Styles = {
   ])
   let rightSide = style(.[display(#flex), alignItems(#center), marginRight(Spacing.medium)])
 
-  let navItemHover = hover([textDecoration(#underline), textDecorationColor(Colors.primary)])
-  let navItem = style(.[
-    marginLeft(Spacing.xsmall),
-    color(Colors.black),
-    textDecoration(#none),
-    navItemHover,
-  ])
+  let navItem = {
+    let navItemHover = hover([textDecoration(#underline), textDecorationColor(Colors.primary)])
+
+    style(.[marginLeft(Spacing.xsmall), color(Colors.black), textDecoration(#none), navItemHover])
+  }
 }
 
 @react.component
