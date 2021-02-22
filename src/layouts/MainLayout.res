@@ -6,5 +6,5 @@ module Styles = {
 }
 @react.component
 let make = (~children) => {
-  <div> <Navbar /> <div className=Styles.wrapper> <main> children </main> </div> </div>
+  <div> <Navbar /> <div className=Styles.wrapper> <main> children </main> </div> <Footer /> </div>
 }

@@ -2,6 +2,7 @@
 
 import * as CssJs from "bs-css-emotion/src/CssJs.js";
 import * as React from "react";
+import * as Footer from "../components/Footer/Footer.js";
 import * as Navbar from "../components/Navbar/Navbar.js";
 
 var wrapper = CssJs.style([
@@ -17,7 +18,7 @@ function MainLayout(Props) {
   var children = Props.children;
   return React.createElement("div", undefined, React.createElement(Navbar.make, {}), React.createElement("div", {
                   className: wrapper
-                }, React.createElement("main", undefined, children)));
+                }, React.createElement("main", undefined, children)), React.createElement(Footer.make, {}));
 }
 
 var make = MainLayout;
