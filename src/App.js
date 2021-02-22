@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import * as MainLayout from "./layouts/MainLayout.js";
+import * as JoinSection from "./components/JoinSection/JoinSection.js";
 import * as AboutSection from "./components/AboutSection/AboutSection.js";
 import * as GlobalStyles from "./styles/GlobalStyles.js";
 import * as IntroSection from "./components/IntroSection/IntroSection.js";
@@ -24,7 +25,7 @@ function $$default(param) {
                     img: "static/post-placeholder.png",
                     description: "primeira parte do artigo sobre Rescript e React"
                   }
-                }), React.createElement(AboutSection.make, {}), React.createElement(LearningSection.make, {}));
+                }), React.createElement(AboutSection.make, {}), React.createElement(LearningSection.make, {}), React.createElement(JoinSection.make, {}));
 }
 
 export {
