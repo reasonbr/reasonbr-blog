@@ -32,16 +32,19 @@ function JoinSection(Props) {
                   className: iconsWrapper
                 }, React.createElement(Icon.make, {
                       title: "Discord",
-                      imgAlt: "logo do Discord de cor branca em um fundo rosa  ",
-                      img: "static/discord-icon.svg"
+                      imgAlt: "logo do Discord de cor branca em um fundo rosa",
+                      img: "static/discord-icon.svg",
+                      href: "https://discord.com/invite/SSDMNYQ"
                     }), React.createElement(Icon.make, {
                       title: "Telegram",
                       imgAlt: "logo do Telegram de cor branca em um fundo rosa",
-                      img: "static/telegram-icon.svg"
+                      img: "static/telegram-icon.svg",
+                      href: "https://t.me/reasonmlbrasil"
                     }), React.createElement(Icon.make, {
                       title: "Twitter",
                       imgAlt: "logo do Twitter de cor branca em um fundo rosa",
-                      img: "static/twitter-icon.svg"
+                      img: "static/twitter-icon.svg",
+                      href: "https://twitter.com/reasonmlbrasil"
                     })));
 }
 

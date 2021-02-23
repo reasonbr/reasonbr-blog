@@ -25,17 +25,20 @@ let make = () => {
       <Icon
         img="static/discord-icon.svg"
         title="Discord"
-        imgAlt="logo do Discord de cor branca em um fundo rosa  "
+        imgAlt="logo do Discord de cor branca em um fundo rosa"
+        href="https://discord.com/invite/SSDMNYQ"
       />
       <Icon
         img="static/telegram-icon.svg"
         title="Telegram"
         imgAlt="logo do Telegram de cor branca em um fundo rosa"
+        href="https://t.me/reasonmlbrasil"
       />
       <Icon
         img="static/twitter-icon.svg"
         title="Twitter"
         imgAlt="logo do Twitter de cor branca em um fundo rosa"
+        href="https://twitter.com/reasonmlbrasil"
       />
     </div>
   </section>

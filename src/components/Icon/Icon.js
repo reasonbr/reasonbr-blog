@@ -17,7 +17,9 @@ var img = CssJs.style([
 
 var wrapper = CssJs.style([
       CssJs.display("flex"),
-      CssJs.flexDirection("column")
+      CssJs.flexDirection("column"),
+      CssJs.alignItems("center"),
+      CssJs.justifyContent("center")
     ]);
 
 var titleHover = CssJs.hover([CssJs.cursor("pointer")]);
@@ -29,20 +31,32 @@ var title = CssJs.style([
       CssJs.width({
             NAME: "percent",
             VAL: 100
-          })
+          }),
+      CssJs.textAlign("center")
+    ]);
+
+var linkVisited = CssJs.visited([CssJs.color(Theme.Colors.black)]);
+
+var link = CssJs.style([
+      CssJs.textDecoration("none"),
+      CssJs.color(Theme.Colors.black),
+      linkVisited
     ]);
 
 var Styles = {
   img: img,
   wrapper: wrapper,
-  title: title
+  title: title,
+  link: link
 };
 
 function Icon(Props) {
   var title$1 = Props.title;
   var imgAltOpt = Props.imgAlt;
   var img$1 = Props.img;
+  var hrefOpt = Props.href;
   var imgAlt = imgAltOpt !== undefined ? imgAltOpt : "";
+  var href = hrefOpt !== undefined ? hrefOpt : "#";
   return React.createElement("div", {
               className: wrapper
             }, React.createElement("img", {
@@ -51,7 +65,12 @@ function Icon(Props) {
                   src: img$1
                 }), React.createElement("h4", {
                   className: title
-                }, title$1));
+                }, React.createElement("a", {
+                      className: link,
+                      href: href,
+                      rel: "noopener noreferrer",
+                      target: "_blank"
+                    }, title$1)));
 }
 
 var make = Icon;
